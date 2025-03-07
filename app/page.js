@@ -449,7 +449,7 @@ export default function HorizontalScroll() {
         
         {/* Slide 1 */}
         <div id="slide1" className="absolute top-0 left-0 flex items-center justify-center w-3/4 md:w-[60%] lg:w-[50%]  h-full">
-          <div className="flex w-full flex-col gap-y-3 items-end">
+          <div className="flex w-full flex-col gap-y-3 items-end text-black">
             <div className="text-6xl font-bold">NEW</div>
             <div className="text-6xl font-bold">ON</div>
             <div className="text-6xl font-bold">SALE</div>
@@ -512,7 +512,7 @@ export default function HorizontalScroll() {
       {/* Slide 5 */}
         
         <div id="slide5" className="absolute top-0 left-[270%] md:left-[260%] flex items-center justify-center w-3/4 md:w-[60%] lg:w-[50%]  h-full">
-          <div className="flex w-full flex-col gap-y-3 items-start">
+          <div className="flex w-full flex-col gap-y-3 items-start text-black">
             <div className="text-4xl font-bold">My Brand</div>
             <div className="text-3xl italic ">see full listing</div>
             <div className="text-3xl italic">in description</div>
