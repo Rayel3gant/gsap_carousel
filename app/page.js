@@ -442,7 +442,7 @@ export default function HorizontalScroll() {
   }
 
   return (
-    <div className="relative w-full h-screen flex justify-center items-center overflow-hidden">   
+    <div className="relative w-full h-screen flex justify-center items-center overflow-hidden bg-white">   
 
       <div className='w-11/12   md:w-3/4 lg:w-[1/2] xl:w-[40%] mx-auto items-center  shadow-md rounded-md'>
         <div ref={carouselRef} className="relative flex h-[450px] md:h-[500px] w-full overflow-hidden    ">
