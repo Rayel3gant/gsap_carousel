@@ -43,12 +43,12 @@ export default function HorizontalScroll() {
         //move slide 1 out partially
         .to(
           '#slide1',
-          { x: '-80%', duration: 1, ease: 'power1.inOut' }
+          { x: '-90%', duration: 1, ease: 'power1.inOut' }
         ).addLabel("slide1out",'<')
         //move slide 2 in view
         .to(
           '#slide2',
-          { x: '-80%', duration: 1, ease: 'power1.inOut' ,scale:1.15 , onStart: () => setActiveSlide(2) },
+          { x: '-85%', duration: 1, ease: 'power1.inOut' ,scale:1.15 , onStart: () => setActiveSlide(2) },
           "slide1out"
         )
         .to({}, { duration: 2 }) // Pause with Slide 2 in center
@@ -69,14 +69,14 @@ export default function HorizontalScroll() {
         //slide 2 partially out
         .to(
           '#slide2',
-          { x: '-180%', duration: 1, ease: 'power1.inOut' , scale:1 },
+          { x: '-175%', duration: 1, ease: 'power1.inOut' , scale:1 },
           "slide2out"
         )
         
         //slide 3 in view
         .to(
           '#slide3',
-          {x: '-180%', duration: 1, ease: 'power1.inOut' ,scale:1.15  ,onStart: () => setActiveSlide(3)}
+          {x: '-165%', duration: 1, ease: 'power1.inOut' ,scale:1.15  ,onStart: () => setActiveSlide(3)}
           ,"slide2out"
         )
         .to({}, { duration: 2}) // Pause with Slide 3 in center
@@ -84,7 +84,7 @@ export default function HorizontalScroll() {
         // slide 4 next
         .to(
           '#slide4',
-          {x: '-180%', duration: 1, ease: 'power1.inOut'},
+          {x: '-160%', duration: 1, ease: 'power1.inOut'},
           "slide2out"
         )
   
@@ -98,14 +98,14 @@ export default function HorizontalScroll() {
         // slide 3 out partially
         .to(
           '#slide3',
-          { x: '-290%', duration: 1, ease: 'power1.inOut' , scale:1 },
+          { x: '-260%', duration: 1, ease: 'power1.inOut' , scale:1 },
           "slide3out"
         )
         
         //slide  4 in view
         .to(
           '#slide4',
-          {x: '-280%', duration: 1, ease: 'power1.inOut' ,scale:1.15 ,onStart: () => setActiveSlide(4) }
+          {x: '-255%', duration: 1, ease: 'power1.inOut' ,scale:1.15 ,onStart: () => setActiveSlide(4) }
           ,"slide3out"
         )
         .to({}, { duration: 2 }) // Pause with Slide 4 in center
@@ -114,7 +114,7 @@ export default function HorizontalScroll() {
         //slide 5 next
         .to(
           '#slide5',
-          {x: '-250%', duration: 1, ease: 'power1.inOut'},
+          {x: '-230%', duration: 1, ease: 'power1.inOut'},
           "slide3out"
         )
   
@@ -128,14 +128,14 @@ export default function HorizontalScroll() {
         // slide 4 partially out 
         .to(
           '#slide4',
-          { x: '-380%', duration: 1, ease: 'power1.inOut' , scale:1 },
+          { x: '-340%', duration: 1, ease: 'power1.inOut' , scale:1 },
           "slide4out"
         )
   
         // slide 5 in view 
         .to(
           '#slide5',
-          {x: '-350%', duration: 1, ease: 'power1.inOut' ,scale:1.15 , onStart: () => setActiveSlide(5) }
+          {x: '-330%', duration: 1, ease: 'power1.inOut' ,scale:1.15 , onStart: () => setActiveSlide(5) }
           ,"slide4out"
         )
         .to({}, { duration: 2 }) // Pause with Slide 4 in center
@@ -460,7 +460,7 @@ export default function HorizontalScroll() {
         {/* Slide 2 */}
         <div
           id="slide2"
-          className="absolute top-0 left-[80%] md:left-[70%] w-3/4 md:w-[60%] mx-auto h-full flex items-center justify-center  rounded-2xl"
+          className="absolute top-0 left-[80%] md:left-[70%] w-[85%] sm:w-3/4 md:w-[60%] mx-auto h-full flex items-center justify-center  rounded-2xl"
         >
           <div className="h-[400px] w-3/4 bg-white rounded-xl  overflow-hidden flex items-center justify-center ">
             <div className="relative h-full w-full ">
@@ -478,7 +478,7 @@ export default function HorizontalScroll() {
         {/* Slide 3 */}
         <div
           id="slide3"
-          className="absolute top-0 left-[150%] md:left-[130%] w-3/4 md:w-[60%] mx-auto h-full flex items-center justify-center  rounded-2xl"
+          className="absolute top-0 left-[150%] md:left-[130%] w-[85%] sm:w-3/4 md:w-[60%] mx-auto h-full flex items-center justify-center  rounded-2xl"
         >
           <div className="h-[400px] w-3/4 bg-white rounded-xl  overflow-hidden flex items-center justify-center">
             <div className="relative h-full w-full  ">
@@ -495,7 +495,7 @@ export default function HorizontalScroll() {
         {/* Slide 4 */}
         <div
           id="slide4"
-          className="absolute top-0 left-[220%] md:left-[190%] w-3/4 md:w-[60%] mx-auto h-full flex items-center justify-center  rounded-2xl"
+          className="absolute top-0 left-[220%] md:left-[190%] w-[85%] sm:w-3/4 md:w-[60%] mx-auto h-full flex items-center justify-center  rounded-2xl"
         >
           <div className="h-[400px] w-3/4 bg-white rounded-xl  overflow-hidden flex items-center justify-center">
             <div className="relative h-full w-full  ">
